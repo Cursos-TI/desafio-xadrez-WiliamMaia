@@ -43,12 +43,10 @@ int main() {
         moverainha(8);
         break;  // Fim Rainha
         case 4: // Escolha Cavalo
-        while (movimento --){
-            for (int avanco_cavalo = 2;avanco_cavalo > 0; avanco_cavalo --){
-                printf("Cima \n");
-            }
-                printf("Direita \n");
-        }
+        for (int avanco_cavalo = 2;avanco_cavalo > 0; avanco_cavalo --){
+            printf("Cima \n");
+        } for (int movimento = 1; movimento > 0; movimento --){
+            printf("Direita \n");
         break;  // Fim Cavalo
         default:
         printf("Escolha Inválida !\n");
