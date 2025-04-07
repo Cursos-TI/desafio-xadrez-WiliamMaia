@@ -10,16 +10,12 @@ void movetorre(int movimento){  // Aqui declaro a função para movimento da Tor
     } while (movimento > 0);
 }   // Conforme uma das expecificações, cada peça deve ter uma estrutura, para Torre foi 'do-while'
 void moveBispo(int movimento) {   // Aqui declaro a função para movimento do Bispo
-    for (int avanco = 0; avanco < movimento; avanco ++) { // Aqui declaro o avanço na vertical
-        for (int virada = 0; virada < movimento; virada ++) { // Aqui declaro a virada da horixontal
-            switch (virada) {
-                case 1: printf("Cima e Direita\n"); break;
+    for (int i = 0; i < movimento; i ++) { // Aqui declaro o avanço na diagonal
+        printf("Cima e Direita\n");
             }
-        }
-    }
-}   //  Conforme uma das expecificações, cada peça deve ter uma estrutura, para o Bispo foi 'for'
+        }   //  Conforme uma das expecificações, cada peça deve ter uma estrutura, para o Bispo foi 'for'
 void moverainha(int movimento){  // Aqui declaro a função para movimento da Rainha
-    while (movimento > 0){
+    while (movimento > 0 ){
     printf("Esquerda \n");
     movimento --; 
     }
